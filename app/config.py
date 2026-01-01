@@ -2,14 +2,22 @@ import os
 from pathlib import Path
 from dotenv import load_dotenv
 
-BASE_DIR = Path(__file__).resolve().parent.parent
-load_dotenv(BASE_DIR / ".env")
+# 1. Define the path logic outside
+try:
+    _BASE_DIR = Path(__file__).resolve().parent.parent
+except NameError:
+    _BASE_DIR = Path(os.getcwd())
 
-HF_TOKEN = os.getenv("HF_TOKEN")
+# 2. Load the .env file
+load_dotenv(_BASE_DIR / ".env")
 
 class Settings:
-    HF_TOKEN : str = os.getenv("HF_TOKEN")
-
-    MODEL_ID: str = "google/gemma-3-12b-it"
+    # 3. Now include it as an attribute of the class
+    BASE_DIR: Path = _BASE_DIR
+    HF_TOKEN: str = os.getenv("HF_TOKEN")
+    MODEL_ID: str = "meta-llama/Llama-3.1-8B-Instruct"
 
 settings = Settings()
+
+if not settings.HF_TOKEN:
+    print("ERROR: HF_TOKEN is empty! Check your .env file location.")
