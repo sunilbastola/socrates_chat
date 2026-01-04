@@ -5,3 +5,5 @@ pydantic
 spacy
 google-generativeai
 huggingface_hub
+node==20.19.0
+vite==7.2.4
