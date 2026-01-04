@@ -2,8 +2,8 @@ fastapi
 uvicorn
 python-dotenv
 pydantic
+pydantic-settings
 spacy
-google-generativeai
 huggingface_hub
-node==20.19.0
-vite==7.2.4
+openai
+google-generativeai
