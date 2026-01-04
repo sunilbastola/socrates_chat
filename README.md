@@ -10,6 +10,7 @@ A full-stack AI application designed to engage users in philosophical dialogue. 
 - **Frontend:** React.js, Tailwind CSS, Vite
 - **Backend:** FastAPI (Python), Docker
 - **NLP/AI:** spaCy (Natural Language Processing), Hugging Face Inference API
+- **AI Moedl Used:** Meta Llama 3.1 (8B Instruct)
 - **Deployment:** Vercel (Frontend), Hugging Face Spaces (Backend)
 
 ## Key Features
