@@ -3,7 +3,7 @@
 A full-stack AI application designed to engage users in philosophical dialogue. This project was completed as part of the Valearnis Internship task.
 
 ## Live Demo
-- **Frontend:** https://socrates-2mmkddtyb-sunils-projects-aaddc4ba.vercel.app
+- **Frontend:** https://ssocrates-ai-two.vercel.app
 - **Backend/API:** https://huggingface.co/spaces/sunilbastola/socrates
 
 ## 🛠️ Technical Stack
