@@ -1,6 +1,6 @@
 # Project Socrates: Socratic AI Assistant
 
-A full-stack AI application designed to engage users in philosophical dialogue. This project was completed as part of the Valearnis Internship task.
+A full-stack AI application designed to engage users in philosophical dialogue.
 
 ## Live Demo
 - **Frontend:** https://ssocrates-ai-two.vercel.app
